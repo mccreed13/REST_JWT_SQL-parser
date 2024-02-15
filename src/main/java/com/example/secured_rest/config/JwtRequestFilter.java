@@ -1,14 +1,12 @@
 package com.example.secured_rest.config;
 
 import com.example.secured_rest.models.User;
-import com.example.secured_rest.repository.UserRepository;
 import com.example.secured_rest.service.UserService;
 import com.example.secured_rest.utils.JwtTokenUtils;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

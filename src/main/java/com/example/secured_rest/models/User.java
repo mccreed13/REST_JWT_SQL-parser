@@ -1,8 +1,10 @@
 package com.example.secured_rest.models;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import jakarta.persistence.Table;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.Collection;
 
@@ -12,7 +14,8 @@ import java.util.Collection;
                 @UniqueConstraint(columnNames = "username")
         })
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

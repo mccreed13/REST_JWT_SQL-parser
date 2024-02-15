@@ -1,6 +1,7 @@
 package com.example.secured_rest.models;
 
 import jakarta.persistence.*;
+import jakarta.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

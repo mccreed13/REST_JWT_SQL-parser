@@ -1,12 +1,9 @@
 package com.example.secured_rest.service;
 
-import com.example.secured_rest.dtos.Table;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
+@AllArgsConstructor
 public class ProductService {
-
-    public void createTable(Table table){
-
-    }
 }

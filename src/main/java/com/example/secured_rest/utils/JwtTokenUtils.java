@@ -65,7 +65,6 @@ public class JwtTokenUtils {
                 .verifyWith(getSigningKey())
                 .build();
         try {
-            System.out.println(token);
             return jwtparser.parseSignedClaims(token)
                     .getPayload();
         } catch (JwtException | IllegalArgumentException e) {
